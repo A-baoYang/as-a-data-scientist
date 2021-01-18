@@ -1,7 +1,9 @@
 # Clinical Hypotension Prediction during Hemodialysis 透析中低血壓預測模型研究
 合作院方在為病患進行血液透析時，若發生低血壓而未即時處理，可能造成嚴重之血管合併症。
 目前困境是，醫護人員為病患量測血壓之頻率最高為 30 分鐘一次。我們能否從血壓量測歷史紀錄、血液透析儀器及穿戴式裝置即時數據中，提前預判低血壓的發生？
+
 Company: [Acusense](http://www.acusense.com.tw/)
+
 Job Title: Data Scientist (part-time)
 
 
@@ -57,9 +59,9 @@ Job Title: Data Scientist (part-time)
 #### Mode Building & Measurement
 3. LSTM model structure
 - Hyperparameters Tuning
-    - # of hidden layers: 1, 2
-    - # of hidden layer nodes: 1.5 times of input nodes + output nodes
-    - # of Dropout layers & ratio: prevent from overfitting
+    - num of hidden layers: 1, 2
+    - num of hidden layer nodes: 1.5 times of input nodes + output nodes
+    - num of Dropout layers & ratio: prevent from overfitting
     - Kinds & ratio of regularizers (l1, l2, l1_l2): `l1_l2`
     - Optimizers & Learning Rate: `adam`
     - Loss: `binary_crossentropy`

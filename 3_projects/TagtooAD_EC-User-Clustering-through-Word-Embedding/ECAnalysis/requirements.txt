@@ -1,0 +1,13 @@
+pandas==0.23.0
+matplotlib
+dask[complete]
+scikit-learn
+tqdm
+gcsfs==0.3.0
+gensim
+jieba
+wordcloud
+dask[dataframe]==2.3.0
+aiohttp
+beautifulsoup4
+gcloud

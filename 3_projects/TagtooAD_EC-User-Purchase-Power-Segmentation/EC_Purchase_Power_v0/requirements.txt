@@ -1,0 +1,9 @@
+pandas==0.23.0
+google-cloud-bigquery
+google-cloud-storage
+dask[complete]
+scikit-learn
+tqdm
+gcsfs==0.3.0
+dask[dataframe]==2.3.0
+
