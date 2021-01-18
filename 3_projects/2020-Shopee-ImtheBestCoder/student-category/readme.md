@@ -12,6 +12,9 @@
 - Duration: 2020/11/21 15:00 - 2020/11/21 17:00
 - [Kaggle Page](https://www.kaggle.com/c/iamthebestcoderstudent2020/leaderboard)
 
+![image](https://i.imgur.com/2IOgil3.png)
+
+
 #### Topic
 
 Optimize the packing operation by determining **the most viable carton box in the least space-wasteful way** for the warehouse since the larger one cost higher.
