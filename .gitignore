@@ -1,0 +1,2 @@
+# ignore any directories named datasets
+**/datasets/
