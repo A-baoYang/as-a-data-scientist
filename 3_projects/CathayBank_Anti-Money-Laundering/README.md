@@ -1,12 +1,21 @@
 # project__LSTM_money-laundering-prediction
 Anti-money laundering project using sequential data about cash transactions on LSTM.
 
-## Query
+
+## Performance
+
+- (label=1) **Precision: 24%** (較行內 baseline 高 **1.4倍**)
+- (label=1) **Recall: 54%**
+
+
+## code walk-through
+
+### Query
 `query.py`
 Hive SQL，用於交易資料撈取
 
 
-## Feature Generation
+### Feature Generation
 `feature_generation.py`
 1. 載入資料
 2. 目標資料集：條件篩選
@@ -39,7 +48,7 @@ Hive SQL，用於交易資料撈取
     - 數值欄位進行縮放處理
 
 
-## Make Sequence
+### Make Sequence
 `make_sequence.py`
 - loop by `actor_id`
 - count `time_diff` for each：計算該用戶交易紀錄中，各筆交易紀錄距離上一次交易的天數 (取到小數點後第4位)
@@ -47,21 +56,21 @@ Hive SQL，用於交易資料撈取
 - format: `json`
 
 
-## Split & Sampling
+### Split & Sampling
 `split_n_sampling.py`
 1. Split：將資料集以 (train:validation:test = 5:2:3) 比例分割
     <!-- 2. Scaling：再使用 trainset scale 對三個資料集進行縮放 -->
 2. Sampling：進行 Over-sampling (本專案採用 SMOTE)
 
 
-## Train, Val & Test
+### Train, Val & Test
 `train_test.py`
 - LSTM model structure
 - Custom Metrics (F1 Score / Recall / Precision)
 - Confusion Matrix Heatmap
 
 
-### Data version constants
+#### Data version constants
 `observ_daterange`：從 hadoop 撈取交易行為資料的時間區間 (ex: 201910-201912)
 
 `label_daterange`：篩選交易帳戶被標記的時間區段 (ex: 202001)
