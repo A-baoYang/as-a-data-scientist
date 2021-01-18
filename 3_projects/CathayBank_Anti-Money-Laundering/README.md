@@ -1,5 +1,7 @@
 # project__LSTM_money-laundering-prediction
 Anti-money laundering project using sequential data about cash transactions on LSTM.
+Company: [Cathay Bank](https://www.cathaybk.com.tw/cathaybk/)
+Job Title: Data Science Intern
 
 
 ## Performance
@@ -63,7 +65,7 @@ Hive SQL，用於交易資料撈取
 2. Sampling：進行 Over-sampling (本專案採用 SMOTE)
 
 
-### Train, Val & Test
+### Mode Building & Measurement
 `train_test.py`
 - LSTM model structure
 - Custom Metrics (F1 Score / Recall / Precision)
